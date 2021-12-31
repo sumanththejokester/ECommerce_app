@@ -3,6 +3,7 @@ import 'package:food_recipe_app/components/custom_svg_icon.dart';
 import 'package:food_recipe_app/components/default_button.dart';
 import 'package:food_recipe_app/components/form_error.dart';
 import 'package:food_recipe_app/constants.dart';
+import 'package:food_recipe_app/screens/otp/otp.dart';
 import 'package:food_recipe_app/sizeConfig.dart';
 
 class CompleteProfileForm extends StatefulWidget {
@@ -51,6 +52,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
             text: "continue",
             press: () {
               if (_formKey.currentState!.validate()) {
+                Navigator.pushNamed(context, OtpScreen.routeName);
               }
             },
           ),
