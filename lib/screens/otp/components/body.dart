@@ -19,7 +19,7 @@ class Body extends StatelessWidget {
                 "OTP Verification",
                 style: headingStyle,
               ),
-              Text("We sent your code to +1 898 860 ***"),
+              Text("We sent your code to +91 9*** *** ***"),
               buildTimer(),
               OtpForm(),
               SizedBox(height: SizeConfig.screenHeight * 0.1),
@@ -45,8 +45,8 @@ class Body extends StatelessWidget {
       children: [
         Text("This code will expired in "),
         TweenAnimationBuilder(
-          tween: Tween(begin: 30.0, end: 0.0),
-          duration: Duration(seconds: 30),
+          tween: Tween(begin: 60.0, end: 0.0),
+          duration: Duration(seconds: 60),
           builder: (_, dynamic value, child) => Text(
             "00:${value.toInt()}",
             style: TextStyle(color: kPrimaryColor),
