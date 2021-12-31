@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:food_recipe_app/components/no_account_text.dart';
 import 'package:food_recipe_app/screens/forgot_password/forgot_password_screen.dart';
 import 'package:food_recipe_app/screens/splash/components/body.dart';
 import 'package:food_recipe_app/components/custom_svg_icon.dart';
@@ -22,7 +23,7 @@ class Body extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(height: SizeConfig.screenHeight * 0.04),
+                SizedBox(height: SizeConfig.screenHeight * 0.03),
                 Text(
                   "Welcome Back",
                   style: TextStyle(
@@ -31,8 +32,9 @@ class Body extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
+                SizedBox(height: SizeConfig.screenHeight * 0.02),
                 Text(
-                  "Sign in with your email and password  \nor continue with social media",
+                  "Sign in with your email and password",
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(height: SizeConfig.screenHeight * 0.08),
@@ -62,32 +64,6 @@ class Body extends StatelessWidget {
           ),
         ),
       ),
-    );
-  }
-}
-
-class NoAccountText extends StatelessWidget {
-  const NoAccountText({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Text(
-          "Don't have an account?",
-          style: TextStyle(fontSize: getProportionateScreenWidth(16)),
-        ),
-        GestureDetector(
-            onTap: () => Navigator.popAndPushNamed(
-                context, ForgotPasswordScreen.routeName),
-            child: Text(
-              'Sign Up',
-              style: TextStyle(
-                  fontSize: getProportionateScreenWidth(16),
-                  color: kPrimaryColor),
-            ))
-      ],
     );
   }
 }
