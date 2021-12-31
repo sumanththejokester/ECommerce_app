@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_recipe_app/constants.dart';
-import 'package:food_recipe_app/screens/forgot_password/forgot_password_screen.dart';
+import 'package:food_recipe_app/screens/sign_up/sign_up.dart';
 import 'package:food_recipe_app/sizeConfig.dart';
 
 class NoAccountText extends StatelessWidget {
@@ -17,8 +17,8 @@ class NoAccountText extends StatelessWidget {
           style: TextStyle(fontSize: getProportionateScreenWidth(16)),
         ),
         GestureDetector(
-            onTap: () => Navigator.popAndPushNamed(
-                context, ForgotPasswordScreen.routeName),
+            onTap: () => Navigator.pushNamed(
+                context, SignUpScreen.routeName),
             child: Text(
               'Sign Up',
               style: TextStyle(
