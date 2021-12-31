@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
-import '../sizeConfig.dart';
+import '../../../constants.dart';
+import '../../../sizeConfig.dart';
 
 class SplashContent extends StatelessWidget {
   const SplashContent({
@@ -14,22 +14,25 @@ class SplashContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [
+      children: <Widget>[
         Spacer(),
         Text(
-          'APP',
+          "APP",
           style: TextStyle(
-            fontSize: getproportionalScreenwidth(36),
+            fontSize: getProportionateScreenWidth(36),
             color: kPrimaryColor,
             fontWeight: FontWeight.bold,
           ),
         ),
-        Text(text!,textAlign: TextAlign.center,),
+        Text(
+          text!,
+          textAlign: TextAlign.center,
+        ),
         Spacer(flex: 2),
         Image.asset(
           image!,
-          height: getproportionalScreenheight(500),
-          width: getproportionalScreenwidth(250),
+          height: getProportionateScreenHeight(265),
+          width: getProportionateScreenWidth(235),
         ),
       ],
     );

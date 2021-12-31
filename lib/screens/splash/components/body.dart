@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:food_recipe_app/components/splash_content.dart';
+import 'package:food_recipe_app/screens/splash/components/splash_content.dart';
 import 'package:food_recipe_app/constants.dart';
-import 'package:food_recipe_app/screens/splash/signIn/sign_in.dart';
+import 'package:food_recipe_app/screens/signIn/sign_in.dart';
 import 'package:food_recipe_app/sizeConfig.dart';
 
-import 'default_button.dart';
+import '../../../components/default_button.dart';
 
 class Body extends StatefulWidget {
   const Body({Key? key}) : super(key: key);
@@ -46,7 +46,7 @@ class _BodyState extends State<Body> {
               flex: 2,
               child: Padding(
                 padding: EdgeInsets.symmetric(
-                    horizontal: getproportionalScreenwidth(20)),
+                    horizontal: getProportionateScreenWidth(20)),
                 child: Column(
                   children: [
                     Spacer(),
@@ -58,7 +58,7 @@ class _BodyState extends State<Body> {
                       ),
                     ),
                     Spacer(flex: 3,),
-                    defaultButton(
+                    DefaultButton(
                       text: 'Continue',
                       press: (){
                         Navigator.pushNamed(context, SignInScreen.routeName);

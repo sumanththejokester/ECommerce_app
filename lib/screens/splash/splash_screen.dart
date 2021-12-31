@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_recipe_app/components/body.dart';
+import 'package:food_recipe_app/screens/splash/components/body.dart';
 import 'package:food_recipe_app/sizeConfig.dart';
 
 class Splashscreen extends StatelessWidget {
@@ -7,7 +7,7 @@ class Splashscreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    sizeConfig().init(context);
+    SizeConfig().init(context);
     return Scaffold(
       body: Body(),
     );
