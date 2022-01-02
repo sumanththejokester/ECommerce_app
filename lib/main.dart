@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:food_recipe_app/constants.dart';
 import 'package:food_recipe_app/routes.dart';
 import 'package:food_recipe_app/screens/splash/splash_screen.dart';
 
