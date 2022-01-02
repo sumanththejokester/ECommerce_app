@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_recipe_app/routes.dart';
 import 'package:food_recipe_app/screens/splash/splash_screen.dart';
-
 import 'theme.dart';
 
 void main() {
@@ -21,4 +20,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

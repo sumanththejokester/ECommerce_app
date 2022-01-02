@@ -57,8 +57,8 @@ class _SignFormState extends State<SignForm> {
               Text("Remember me"),
               Spacer(),
               GestureDetector(
-                onTap: ()=>Navigator.pushNamed(
-                context, ForgotPasswordScreen.routeName),
+                onTap: () => Navigator.push(context,
+                    MaterialPageRoute(builder: (_) => ForgotPasswordScreen())),
                 child: Text(
                   "Forgot Password",
                   style: TextStyle(decoration: TextDecoration.underline),
@@ -73,7 +73,7 @@ class _SignFormState extends State<SignForm> {
             press: () {
               if (_formKey.currentState!.validate()) {
                 _formKey.currentState!.save();
-                 Navigator.pushNamed(context, LoginSuccessScreen.routeName);
+                Navigator.pushNamed(context, LoginSuccessScreen.routeName);
               }
             },
           ),

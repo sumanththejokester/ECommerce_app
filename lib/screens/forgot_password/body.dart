@@ -4,6 +4,7 @@ import 'package:food_recipe_app/components/default_button.dart';
 import 'package:food_recipe_app/components/form_error.dart';
 import 'package:food_recipe_app/components/no_account_text.dart';
 import 'package:food_recipe_app/constants.dart';
+import 'package:food_recipe_app/screens/otp/otp.dart';
 import 'package:food_recipe_app/sizeConfig.dart';
 
 class Body extends StatelessWidget {
@@ -99,6 +100,7 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
             text: "Continue",
             press: () {
               if (_formKey.currentState!.validate()) {
+                Navigator.pushNamed(context, OtpScreen.routeName);
               }
             },
           ),
