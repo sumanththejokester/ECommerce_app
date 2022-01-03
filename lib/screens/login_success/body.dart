@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_recipe_app/components/default_button.dart';
+import 'package:food_recipe_app/screens/home/home.dart';
 import 'package:food_recipe_app/sizeConfig.dart';
 
 class Body extends StatelessWidget {
@@ -26,7 +27,9 @@ class Body extends StatelessWidget {
           width: SizeConfig.screenWidth * 0.6,
           child: DefaultButton(
             text: "Continue to home",
-            press: () {},
+            press: () {
+              Navigator.pushNamed(context, HomeScreen.routeName);
+            },
           ),
         ),
         Spacer(),

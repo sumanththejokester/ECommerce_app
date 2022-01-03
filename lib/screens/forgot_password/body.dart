@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_recipe_app/components/custom_svg_icon.dart';
 import 'package:food_recipe_app/components/default_button.dart';
 import 'package:food_recipe_app/components/form_error.dart';
+import 'package:food_recipe_app/components/keyboardUtil.dart';
 import 'package:food_recipe_app/components/no_account_text.dart';
 import 'package:food_recipe_app/constants.dart';
 import 'package:food_recipe_app/screens/otp/otp.dart';
@@ -100,6 +101,8 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
             text: "Continue",
             press: () {
               if (_formKey.currentState!.validate()) {
+                _formKey.currentState!.save();
+                KeyboardUtil.hideKeyboard(context);
                 Navigator.pushNamed(context, OtpScreen.routeName);
               }
             },

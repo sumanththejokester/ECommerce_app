@@ -18,6 +18,8 @@ final headingStyle = TextStyle(
     fontWeight: FontWeight.bold,
     height: 1.5);
 
+const defaultDuration = Duration(milliseconds: 250);
+
 final RegExp emailValidatorRegExp =
     RegExp(r"^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]+");
 const String kEmailNullError = "Please Enter your email";
