@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:530131561222:android:f1b1e195203fcdc38d4c87",
         "android_client_info": {
-          "package_name": "com.food_recipe_app"
+          "package_name": "com.ECommerce"
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_id": "530131561222-6b1hk3nv61slpsh0sfhvfv90sbo8ch0h.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.food_recipe_app",
+            "package_name": "com.ECommerce",
             "certificate_hash": "c8b12c4434da2d718ad75d6ab696e26d7ff01489"
           }
         },

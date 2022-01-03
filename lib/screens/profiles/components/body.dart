@@ -1,6 +1,8 @@
+
 import 'package:flutter/material.dart';
 import 'package:food_recipe_app/screens/profiles/components/menu.dart';
 import 'package:food_recipe_app/screens/profiles/components/pic.dart';
+import 'package:food_recipe_app/screens/splash/splash_screen.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -34,7 +36,9 @@ class Body extends StatelessWidget {
           ProfileMenu(
             text: "Log Out",
             icon: "assets/icons/Log_out.svg",
-            press: () {},
+            press: () {
+             Navigator.pushNamed(context, Splashscreen.routeName);
+            },
           ),
         ],
       ),

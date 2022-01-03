@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:food_recipe_app/components/socal_card.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:food_recipe_app/components/socal_card2.dart';
+import 'package:food_recipe_app/constants.dart';
 import 'package:food_recipe_app/sizeConfig.dart';
 
 class Categories extends StatelessWidget {
@@ -31,9 +33,8 @@ class Categories extends StatelessWidget {
 }
 
 class CategoryCard extends StatelessWidget {
-  var SvgPicture;
 
-  CategoryCard({
+  const CategoryCard({
     Key? key,
     required this.icon,
     required this.text,
@@ -56,13 +57,10 @@ class CategoryCard extends StatelessWidget {
               height: getProportionateScreenWidth(55),
               width: getProportionateScreenWidth(55),
               decoration: BoxDecoration(
-                color: Color(0xFFFFECDF),
+                color: Color(0xFFE1BEE7),
                 borderRadius: BorderRadius.circular(10),
               ),
-              child: SocalCard(
-                icon: icon!,
-                press: () {},
-              ),
+              child: SvgPicture.asset(icon!,color: kPrimaryColor,),
             ),
             SizedBox(height: 5),
             Text(text!, textAlign: TextAlign.center)

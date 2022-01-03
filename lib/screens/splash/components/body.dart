@@ -16,9 +16,9 @@ class Body extends StatefulWidget {
 class _BodyState extends State<Body> {
   int currentpage = 0;
   List<Map<String, String>> splashData = [
-    {'text': 'welcome to app', 'image': 'assets/images/splash_demo1.png'},
-    {'text': 'we will help you', 'image': 'assets/images/splash_demo2.png'},
-    {'text': 'we show the easy way', 'image': 'assets/images/splash_demo3.png'}
+    {'text': 'Welcome to S shop', 'image': 'assets/images/splash_demo1.png'},
+    {'text': 'We are here to help you', 'image': 'assets/images/splash_demo2.png'},
+    {'text': "We will show the easy way", 'image': 'assets/images/splash_demo3.png'}
   ];
   @override
   Widget build(BuildContext context) {
