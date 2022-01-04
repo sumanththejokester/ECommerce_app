@@ -62,6 +62,7 @@ class Body extends StatelessWidget {
   TextFormField buildAddressFormField() {
     return TextFormField(
       onSaved: (newValue) => address = newValue,
+      onChanged: (value) => address = value,
       decoration: InputDecoration(
         labelText: "Address",
         hintText: address,
@@ -78,6 +79,7 @@ class Body extends StatelessWidget {
     return TextFormField(
       keyboardType: TextInputType.phone,
       onSaved: (newValue) => phoneNumber = newValue,
+      onChanged: (value) => phoneNumber = value,
       decoration: InputDecoration(
         labelText: "Phone Number",
         hintText: phoneNumber,
@@ -107,6 +109,7 @@ class Body extends StatelessWidget {
   TextFormField buildFirstNameFormField() {
     return TextFormField(
       onSaved: (newValue) => firstName = newValue,
+      onChanged: (value) => firstName = value,
       decoration: InputDecoration(
         labelText: "First Name",
         hintText: firstName,
