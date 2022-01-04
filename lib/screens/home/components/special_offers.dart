@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_recipe_app/screens/home/components/section_tile.dart';
+import 'package:food_recipe_app/screens/special_products/special_products.dart';
 import 'package:food_recipe_app/sizeConfig.dart';
 
 class SpecialOffers extends StatelessWidget {
@@ -26,9 +27,11 @@ class SpecialOffers extends StatelessWidget {
             children: [
               SpecialOfferCard(
                 image: "assets/images/Image Banner 2.png",
-                category: "Smartphone",
+                category: "GADGETS",
                 numOfBrands: 18,
-                press: () {},
+                press: () {
+                  Navigator.pushNamed(context, SpecialProducts.routeName);
+                },
               ),
               SpecialOfferCard(
                 image: "assets/images/Image Banner 3.png",

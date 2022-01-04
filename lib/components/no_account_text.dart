@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_recipe_app/constants.dart';
-import 'package:food_recipe_app/screens/sign_up/sign_up.dart';
+import 'package:food_recipe_app/screens/signIn/sign_in.dart';
 import 'package:food_recipe_app/sizeConfig.dart';
 
 class NoAccountText extends StatelessWidget {
@@ -18,9 +18,9 @@ class NoAccountText extends StatelessWidget {
         ),
         GestureDetector(
             onTap: () => Navigator.pushNamed(
-                context, SignUpScreen.routeName),
+                context, SignInScreen.routeName),
             child: Text(
-              'Sign Up',
+              'Sign In',
               style: TextStyle(
                   fontSize: getProportionateScreenWidth(16),
                   color: kPrimaryColor),

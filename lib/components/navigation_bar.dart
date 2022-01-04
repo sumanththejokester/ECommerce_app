@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food_recipe_app/constants.dart';
+import 'package:food_recipe_app/screens/home/home.dart';
 import 'package:food_recipe_app/screens/profiles/profile.dart';
 
 enum MenuState { home, favourite, message, profile }
@@ -44,9 +45,7 @@ class CustomBottomNavBar extends StatelessWidget {
                       ? kPrimaryColor
                       : inActiveIconColor,
                 ),
-                onPressed: () => {},
-                //Navigator.pushNamed(context, HomeScreen.routeName),
-              ),
+                onPressed: () =>Navigator.pushNamed(context, HomeScreen.routeName)),
               IconButton(
                 icon: SvgPicture.asset("assets/icons/Heart_Icon.svg"),
                 onPressed: () {},

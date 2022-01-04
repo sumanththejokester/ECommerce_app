@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_recipe_app/constants.dart';
 import 'package:food_recipe_app/screens/otp/components/otp_form.dart';
+import 'package:food_recipe_app/screens/otp/otp.dart';
 import 'package:food_recipe_app/sizeConfig.dart';
 
 class Body extends StatelessWidget {
@@ -25,6 +26,7 @@ class Body extends StatelessWidget {
               SizedBox(height: SizeConfig.screenHeight * 0.1),
               GestureDetector(
                 onTap: () {
+                  Navigator.pushNamed(context, OtpScreen.routeName);
                   // OTP code resend
                 },
                 child: Text(

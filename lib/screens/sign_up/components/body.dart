@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:food_recipe_app/components/no_account_text.dart';
 import 'package:food_recipe_app/components/socal_card.dart';
 import 'package:food_recipe_app/constants.dart';
 import 'package:food_recipe_app/sizeConfig.dart';
@@ -23,9 +24,9 @@ class Body extends StatelessWidget {
                   "Complete your details to Sign Up",
                   textAlign: TextAlign.center,
                 ),
-                SizedBox(height: SizeConfig.screenHeight * 0.08),
+                SizedBox(height: SizeConfig.screenHeight * 0.04),
                 SignUpForm(),
-                SizedBox(height: SizeConfig.screenHeight * 0.08),
+                SizedBox(height: SizeConfig.screenHeight * 0.04),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -43,6 +44,7 @@ class Body extends StatelessWidget {
                     ),
                   ],
                 ),
+                NoAccountText(),
                 SizedBox(height: getProportionateScreenHeight(20)),
                 Text(
                   'By continuing your confirm that you agree \nwith our Term and Condition',

@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:food_recipe_app/screens/profiles/components/menu.dart';
+import 'package:food_recipe_app/screens/profiles/components/myAccount.dart';
 import 'package:food_recipe_app/screens/profiles/components/pic.dart';
 import 'package:food_recipe_app/screens/splash/splash_screen.dart';
 
@@ -16,7 +17,7 @@ class Body extends StatelessWidget {
           ProfileMenu(
             text: "My Account",
             icon: "assets/icons/User_logo.svg",
-            press: () => {},
+            press: () => Navigator.pushNamed(context, MyAccountScreen.routeName),
           ),
           ProfileMenu(
             text: "Notifications",

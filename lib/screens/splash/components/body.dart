@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:food_recipe_app/screens/sign_up/sign_up.dart';
 import 'package:food_recipe_app/screens/splash/components/splash_content.dart';
 import 'package:food_recipe_app/constants.dart';
-import 'package:food_recipe_app/screens/signIn/sign_in.dart';
 import 'package:food_recipe_app/sizeConfig.dart';
 
 import '../../../components/default_button.dart';
@@ -63,7 +63,7 @@ class _BodyState extends State<Body> {
                     DefaultButton(
                       text: 'Continue',
                       press: () {
-                        Navigator.pushNamed(context, SignInScreen.routeName);
+                        Navigator.pushNamed(context, SignUpScreen.routeName);
                       },
                     ),
                     Spacer(),

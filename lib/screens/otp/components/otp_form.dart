@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_recipe_app/components/default_button.dart';
 import 'package:food_recipe_app/constants.dart';
+import 'package:food_recipe_app/screens/signIn/sign_in.dart';
 import 'package:food_recipe_app/sizeConfig.dart';
 
 class OtpForm extends StatefulWidget {
@@ -138,7 +139,9 @@ class _OtpFormState extends State<OtpForm> {
           SizedBox(height: SizeConfig.screenHeight * 0.15),
           DefaultButton(
             text: "Continue",
-            press: () {},
+            press: () {
+              Navigator.pushNamed(context, SignInScreen.routeName);
+            },
           )
         ],
       ),

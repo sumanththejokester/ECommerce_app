@@ -1,13 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food_recipe_app/components/no_account_text.dart';
-import 'package:food_recipe_app/screens/forgot_password/forgot_password_screen.dart';
-import 'package:food_recipe_app/screens/splash/components/body.dart';
-import 'package:food_recipe_app/components/custom_svg_icon.dart';
-import 'package:food_recipe_app/components/default_button.dart';
-import 'package:food_recipe_app/components/form_error.dart';
 import 'package:food_recipe_app/components/socal_card.dart';
-import 'package:food_recipe_app/constants.dart';
 import 'package:food_recipe_app/screens/signIn/components/sign_form.dart';
 import 'package:food_recipe_app/sizeConfig.dart';
 
@@ -58,7 +51,6 @@ class Body extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: getProportionateScreenHeight(20)),
-                NoAccountText(),
               ],
             ),
           ),
